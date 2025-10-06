@@ -290,10 +290,10 @@ function QuickTheoCat()
 
   -- 2) Rake if missing (and bleeds enabled & not immune)
   if Cast_Rake() then return end
-  -- 3) Shred prio builder (auto-pauses after not-behind UI error)
-  if Cast_Shred() then return end
-  -- 4) Claw filler
+   -- 4) Claw filler
   if Cast_Claw() then return end
+    -- 3) Shred prio builder (auto-pauses after not-behind UI error)
+  if Cast_Shred() then return end
 end
 
 -- =====================
@@ -337,4 +337,5 @@ SlashCmdList["BLEEDER"] = function()
   else
     DEFAULT_CHAT_FRAME:AddMessage("QuickTheoFeral: Bleeds |cff00ff00ENABLED|r (Cat)", 0,1,0)
   end
+
 end
